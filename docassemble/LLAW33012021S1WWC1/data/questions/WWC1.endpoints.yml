@@ -1,0 +1,41 @@
+# summary document available for dl and email with link
+# to the SAET forms page 
+---
+objects:
+  - endpoints: DADict
+---
+event: endpoints['final_screen']
+question: Your Document is Ready!
+subquestion: |
+  
+
+  Thank you for using this application ____. 
+  
+  We have collected the following data from you:
+  
+  Information|Your Input
+  -----------|----------
+  First Name|${ First_Name }
+  Last Name|${ Last_Name }
+  Work Status|${ work_status }
+  Allowance|${ amount_allowance }
+  Overtime Amount|${ amount_overtime }
+  Hour Overtime|${ hours_overtime }
+  Overtime Paid|${ paid_overtime }
+  Paid Penalty Rates|${ paid_penalty_rates }
+  Penalty Rates|${ penalty_rates }
+  Allowance Amount|${ amount_allowance }
+  Paid Hour|${ paid_hour }
+  Weekly Hour|${ hours_week }
+  
+
+  
+  Below is a downloadable docx file of the details you've inputed. 
+attachment:
+  docx template file: WWC1_Docassemble_Template.docx
+buttons:
+  - I wish to restart: restart
+  - Exit: exit
+    
+# Emma wants both a link to the WWC website as well as the SAET forms webpage
+---
